@@ -7,21 +7,35 @@
   </head>
   <body>
     <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
+      <form class="search-form" id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          required
+          class="search-form-input"
+          id="search-form-input"
+        />
+        <input type="submit" value="Search" class="search-form-button" />
       </form>
     </header>
     <main>
-      <div>
-        <h1>Atlanta</h1>
-        <p>
-          Monday 19:00, partly cloudy
-          <br />
-          Humidity: 80%, Wind: 12mph
-        </p>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city" id="city"></h1>
+          <p class="weather-app-details">
+            <span id="time"></span>,
+            <span id="description"></span>
+            <br />
+            Humidity: <strong id="humidity"></strong>, Wind:
+            <strong id="wind-speed"></strong>
+          </p>
+        </div>
+        <div class="weather-app-temperature-container">
+          <div id="icon"></div>
+          <div class="weather-app-temperature" id="temperature"></div>
+          <div class="weather-app-unit">°F</div>
+        </div>
       </div>
-      <div>emoji 82°F</div>
     </main>
 
     <footer>
@@ -36,4 +50,5 @@
     </footer>
   </body>
 </html>
+
 
