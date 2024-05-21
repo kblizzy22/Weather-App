@@ -9,53 +9,55 @@
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" src="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>My First Weather App</title>
   </head>
   <body>
-    <header>
-      <form class="search-form" id="search-form">
-        <input
-          type="search"
-          placeholder="Enter a city..."
-          required
-          class="search-form-input"
-          id="search-form-input"
-        />
-        <input type="submit" value="Search" class="search-form-button" />
-      </form>
-    </header>
-    <main>
-      <div class="weather-app-data">
-        <div>
-          <h1 class="weather-app-city" id="city"></h1>
-          <p class="weather-app-details">
-            <span id="time"></span>,
-            <span id="description"></span>
-            <br />
-            Humidity: <strong id="humidity"></strong>, Wind:
-            <strong id="wind-speed"></strong>
-          </p>
+    <div class="weather-app">
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city"></h1>
+            <p class="weather-app-details">
+              <span id="time"></span>,
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon"></div>
+            <div class="weather-app-temperature" id="temperature"></div>
+            <div class="weather-app-unit">°F</div>
+          </div>
         </div>
-        <div class="weather-app-temperature-container">
-          <div id="icon"></div>
-          <div class="weather-app-temperature" id="temperature"></div>
-          <div class="weather-app-unit">°F</div>
-        </div>
-      </div>
-    </main>
+      </main>
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/kblizzy22/" target="_blank"
-        >Kelly Bailey-Alme</a
-      >, is
-      <a href="https://github.com/kblizzy22/Weather-App" target="_blank"
-        >open-sourced on Github</a
-      >
-      and <a href="https://quiet-cascaron-33f61f.netlify.app/" target="_blank">hosted on Netlify.</a>
-    </footer>
-    <script src="src/index.js"></script>
+      <footer>
+        This project was coded by
+        <a href="https://github.com/kblizzy22/" target="_blank"
+          >Kelly Bailey-Alme</a
+        >, is
+        <a href="https://github.com/kblizzy22/Weather-App" target="_blank"
+          >open-sourced on Github</a
+        >
+        and <a href="https://netlify.app" target="_blank">hosted on Netlify.</a>
+      </footer>
+      <script src="src/index.js"></script>
+    </div>
   </body>
 </html>
